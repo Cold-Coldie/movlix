@@ -5,8 +5,9 @@ import styles from "../styles/Login.module.css";
 import { useRouter } from "next/router";
 import { UserContext } from "../context/UserContext";
 import { magic } from "@/lib/magic";
+import Link from "next/link";
 
-const login = () => {
+const Login = () => {
   const router = useRouter();
 
   const { user, setUser } = useContext(UserContext);
@@ -97,7 +98,7 @@ const login = () => {
 
       <header className={styles.header}>
         <div className={styles.headerWrapper}>
-          <a href="/" className={styles.logoLink}>
+          <Link href="/" className={styles.logoLink}>
             <div className={styles.logoWrapper}>
               <Image
                 src={"/static/icons/netflix.svg"}
@@ -106,7 +107,7 @@ const login = () => {
                 height={34}
               />
             </div>
-          </a>
+          </Link>
         </div>
       </header>
 
@@ -130,4 +131,4 @@ const login = () => {
   );
 };
 
-export default login;
+export default Login;

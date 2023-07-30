@@ -36,7 +36,7 @@ const Navbar = ({ username }) => {
   return (
     <div className={styles.container}>
       <div className={styles.wrapper}>
-        <a href="/" className={styles.logoLink}>
+        <Link href="/" className={styles.logoLink}>
           <div className={styles.logoWrapper}>
             <Image
               src={"/static/icons/netflix.svg"}
@@ -45,7 +45,7 @@ const Navbar = ({ username }) => {
               height={34}
             />
           </div>
-        </a>
+        </Link>
 
         <ul className={styles.navItems}>
           <li className={styles.navItem} onClick={handleOnClickHome}>

@@ -3,7 +3,7 @@ import React from "react";
 import styles from "./banner.module.css";
 import { useRouter } from "next/router";
 
-const banner = ({ title, subTitle, imageUrl, videoId }) => {
+const Banner = ({ title, subTitle, imageUrl, videoId }) => {
   const router = useRouter();
 
   const handlePlayVideo = () => {
@@ -51,4 +51,4 @@ const banner = ({ title, subTitle, imageUrl, videoId }) => {
   );
 };
 
-export default banner;
+export default Banner;
